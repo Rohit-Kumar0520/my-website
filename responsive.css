@@ -1,0 +1,214 @@
+/* ================================
+   responsive.css
+   Makes Amazon Clone Fully Responsive
+   ================================ */
+
+/* ===== General Adjustments ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img, .box-image, .box-image1 {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+/* ====== Medium Screens (Tablets) ====== */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .nav-search {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .panel {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .panel-ops {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .shop-section.section, .deals.section {
+    justify-content: center;
+  }
+
+  .box {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .foot-panel2 {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ====== Small Screens (Phones <768px) ====== */
+@media (max-width: 768px) {
+
+  /* Navbar becomes vertical */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-address,
+  .nav-signin,
+  .nav-return,
+  .nav-cart {
+    font-size: 0.9rem;
+  }
+
+  .nav-search {
+    flex-direction: row;
+    width: 90%;
+    height: 35px;
+  }
+
+  .search-select {
+    width: 60px;
+  }
+
+  /* Hero section text wrapping */
+  .herosection {
+    height: 250px;
+    margin-top: 160px;
+    background-position: center;
+  }
+
+  .heromsg {
+    width: 95%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* Boxes stack in 2 per row */
+  .box {
+    width: 45%;
+    margin: 8px 0;
+  }
+
+  /* Today’s deals cards */
+  .todaybox {
+    width: 90%;
+  }
+
+  /* Forms */
+  .customerforms, .reviewform {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .text, .formtext {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  button, .submit, .Place-order {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  /* Reviews */
+  .review-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 80%;
+  }
+
+  /* Footer */
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .boxes h3 {
+    padding-top: 10px;
+  }
+
+  .foot-panel3 {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+}
+
+/* ====== Extra Small Screens (Phones <480px) ====== */
+@media (max-width: 480px) {
+
+  .navbar {
+    gap: 5px;
+  }
+
+  .nav-search {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    width: 100%;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+  }
+
+  .panel-ops a {
+    font-size: 0.8rem;
+    margin: 5px;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .heading p, .reviewheading p {
+    font-size: 1.2rem;
+  }
+
+  .text, .formtext {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .copyright .upper {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
